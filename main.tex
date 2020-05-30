@@ -1,0 +1,36 @@
+\documentclass[a4j,titlepage]{jarticle}
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{here}
+\usepackage{listings,jlisting}
+\usepackage{url}
+\usepackage{subfiles}
+
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  frame=single,
+  breaklines=true,
+}
+
+\renewcommand{\figurename}{Fig. }
+\renewcommand{\tablename}{Table }
+
+% \newcommand{\eqref}[1]{式(\ref{#1})}
+\newcommand{\tableref}[1]{Table \ref{#1}}
+\newcommand{\figureref}[1]{Fig. \ref{#1}}
+
+\title{SpotMicro Documentation}
+\author{@h\_krbys\\( h.krbys.robot@gmail.com )}
+\date{\the\year 年\the\month 月\the\day 日}
+
+\begin{document}
+\maketitle
+% -----------------------------------------------------------------------------%
+\subfile{intro.tex}
+% -----------------------------------------------------------------------------%
+\end{document}
